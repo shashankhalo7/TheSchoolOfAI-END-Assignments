@@ -11,8 +11,11 @@ We trained a LSTM Model to detect sentiment (positive or negative) using PyTorch
 - [Upgraded Sentiment Analysis.ipynb](https://github.com/bentrevett/pytorch-sentiment-analysis/blob/master/2%20-%20Upgraded%20Sentiment%20Analysis.ipynb)
 
 
-We then modified the code in the upgraded sentiment analysis notebook to have 3 LSTM layers, it has used a for loop to do so in the forward function and the dropout value used is 0.2:
-We trained on the IMDB Reviews text which was reversed and got 87.33% test accuracy.Here are the training logs
+We then modified the code in the upgraded sentiment analysis notebook to have 3 LSTM layers, it has used a for loop to do so in the forward function and the dropout value used is 0.2.We trained on the IMDB Reviews text which was reversed and got 87.33% test accuracy.
+
+The final code can be found in the [Assignment 4 Notebook](https://github.com/shashankhalo7/TheSchoolOfAI-END-Assignments/blob/main/Assignment4/END_Assignment_4.ipynb)
+
+Here are the training logs. 
 
 ## Training
 ![](images/train.png)

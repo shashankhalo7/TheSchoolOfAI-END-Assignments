@@ -647,3 +647,378 @@ for ele in test_list:
         pass
 print("Product of integers in list : " + str(res))
 
+
+# write a python program to add an element to a list. Print the final list.
+lst = ["Jon", "Kelly", "Jessa"]
+lst.append("Scott")
+print(lst)
+
+
+# write a python function to append all elements of one list to another
+def extend_list(list1, list2):
+    list1 = [1, 2]
+    list2 = [3, 4]
+    return list1.extend(list2)
+
+
+# write a python function to add elements of two lists
+def add_two_lists(list1, list2):
+   list1 = [1, 2, 3]
+   list2 = [4, 5, 6]
+   sum_list = []
+
+   for (item1, item2) in zip(list1, list2):
+      sum_list.append(item1+item2)
+   return sum_list
+
+# Write a  python program to print the last element of a list
+list1 = ['p','r','o','b','e']
+
+print(list1[-1])
+
+# Write a python program to print positive Numbers in a List 
+  
+list1 = [11, -21, 0, 45, 66, -93] 
+  
+for num in list1: 
+      
+    if num >= 0: 
+       print(num, end = " ") 
+
+
+# Write a python function to multiply all values in a list
+ 
+def multiplyList(myList) :
+    result = 1
+    for x in myList:
+         result = result * x 
+    return result 
+     
+
+
+
+# Write a python program to print the smallest number in a list 
+
+list1 = [10, 20, 1, 45, 99] 
+  
+print("Smallest element is:", min(list1)) 
+
+
+# Write a python program to remove even numbers from a list. Print the final list.
+  
+list1 = [11, 5, 17, 18, 23, 50]  
+  
+for ele in list1: 
+    if ele % 2 == 0: 
+        list1.remove(ele) 
+  
+print("New list after removing all even numbers: ", list1) 
+
+# Write a python program to print a list after removing elements from index 1 to 4
+
+list1 = [11, 5, 17, 18, 23, 50]  
+  
+del list1[1:5] 
+  
+print(*list1)
+
+
+# Write a python program to remove 11 and 18 from a list. Print the final list.
+  
+list1 = [11, 5, 17, 18, 23, 50]  
+  
+unwanted_num = {11, 18} 
+  
+list1 = [ele for ele in list1 if ele not in unwanted_num] 
+  
+print("New list after removing unwanted numbers: ", list1)
+
+
+# Write a python program to Remove multiple empty spaces from  List of strings. Print the original and final lists.
+  
+test_list = ['gfg', '   ', ' ', 'is', '            ', 'best'] 
+  
+print("The original list is : " + str(test_list)) 
+  
+res = [ele for ele in test_list if ele.strip()] 
+      
+print("List after filtering non-empty strings : " + str(res)) 
+
+
+# Write a python function to get the Cumulative sum of a list 
+def Cumulative(lists): 
+    cu_list = [] 
+    length = len(lists) 
+    cu_list = [sum(lists[0:x:1]) for x in range(0, length+1)] 
+    return cu_list[1:]
+ 
+
+ # Write a python program to print if a string "hello" is present in the list
+l = [1, 2.0, 'hello','have', 'a', 'good', 'day'] 
+  
+s = 'hello'  
+  
+if s in l: 
+    print(f'{s} is present in the list') 
+else: 
+    print(f'{s} is not present in the list') 
+
+# Write a python program to print the distance between first and last occurrence of even element.
+  
+test_list = [1, 3, 7, 4, 7, 2, 9, 1, 10, 11] 
+  
+indices_list = [idx for idx in range( 
+    len(test_list)) if test_list[idx] % 2 == 0] 
+  
+
+res = indices_list[-1] - indices_list[0] 
+  
+print("Even elements distance : " + str(res)) 
+
+
+# Write a python fuction to create an empty list 
+  
+def emptylist():
+   return list()  
+
+# Write a python program to print a list with all elements as 5 and of length 10
+
+list1 = [5] * 10
+
+print(list1)
+
+
+# Write a python program to reverse a list and print it.  
+def Reverse(lst): 
+    return [ele for ele in reversed(lst)] 
+      
+lst = [10, 11, 12, 13, 14, 15] 
+print(Reverse(lst)) 
+
+# Write a python program to print odd numbers in a List 
+  
+list1 = [10, 21, 4, 45, 66, 93, 11]  
+   
+odd_nos = list(filter(lambda x: (x % 2 != 0), list1)) 
+  
+print("Odd numbers in the list: ", odd_nos)
+
+
+# Write a python program to print negative Numbers in a List 
+  
+list1 = [11, -21, 0, 45, 66, -93] 
+  
+for num in list1: 
+      
+    if num < 0: 
+       print(num, end = " ")
+
+# Write a python program print the the number of occurrences of 8 in a list
+def countX(lst, x): 
+    count = 0
+    for ele in lst: 
+        if (ele == x): 
+            count = count + 1
+    return count 
+  
+lst = [8, 6, 8, 10, 8, 20, 10, 8, 8] 
+x = 8
+print('{} has occurred {} times'.format(x, countX(lst, x))) 
+
+
+# Write a python program to swap first and last element of a list . Print the final list
+  
+def swapList(newList): 
+    size = len(newList) 
+      
+    # Swapping  
+    temp = newList[0] 
+    newList[0] = newList[size - 1] 
+    newList[size - 1] = temp 
+      
+    return newList 
+      
+newList = [12, 35, 9, 56, 24] 
+  
+print(swapList(newList)) 
+
+# Write a python program to convert each list element to key-value pair. Print the final dictionary
+  
+test_list = [2323, 82, 129388, 234, 95] 
+  
+print("The original list is : " + str(test_list)) 
+  
+res = dict() 
+for ele in test_list: 
+  
+    mid_idx = len(str(ele)) // 2
+    key = int(str(ele)[:mid_idx]) 
+    val = int(str(ele)[mid_idx:]) 
+  
+    res[key] = val 
+  
+print("Constructed Dictionary : " + str(res)) 
+
+# Write a python program for print all elements with digit 7.
+  
+test_list = [56, 72, 875, 9, 173]  
+   
+K = 7
+  
+res = [ele for ele in test_list if str(K) in str(ele)] 
+  
+print("Elements with digit K : " + str(res))
+
+
+# Write a python program for printing number of unique elements in a list
+input_list = [1, 2, 2, 5, 8, 4, 4, 8] 
+  
+l1 = [] 
+  
+count = 0
+  
+for item in input_list: 
+    if item not in l1: 
+        count += 1
+        l1.append(item) 
+
+print("No of unique items are:", count) 
+
+# Write a python program to find the sum and average of the list. Print the sum and average
+  
+L = [4, 5, 1, 2, 9, 7, 10, 8] 
+  
+count = 0
+  
+for i in L: 
+    count += i 
+
+avg = count/len(L) 
+  
+print("sum = ", count) 
+print("average = ", avg)
+
+# Write a python program to Remove Tuples of Length 1 from a list of tuples. Print the final list.
+  
+test_list = [(4, 5), (4, ), (8, 6, 7), (1, ), (3, 4, 6, 7)] 
+K = 1
+res = [ele for ele in test_list if len(ele) != K] 
+  
+print("Filtered list : " + str(res))
+
+# Write a python program to print a list of tuples from given list having number and its cube in each tuple 
+  
+list1 = [1, 2, 5, 6] 
+ 
+res = [(val, pow(val, 3)) for val in list1] 
+  
+print(res) 
+
+# Write a python program to print the combination of tuples in list of tuples 
+  
+test_list = [([1, 2, 3], 'gfg'), ([5, 4, 3], 'cs')]
+  
+res = [ (tup1, tup2) for i, tup2 in test_list for tup1 in i ] 
+
+print("The list tuple combination : " + str(res)) 
+
+# Write a python program to swap tuple elements in list of tuples. Print the output.
+
+test_list = [(3, 4), (6, 5), (7, 8)] 
+  
+res = [(sub[1], sub[0]) for sub in test_list] 
+          
+print("The swapped tuple list is : " + str(res)) 
+
+# Write a python function to sort a list of tuples by the second Item 
+
+def Sort_Tuple(tup):  
+      
+    lst = len(tup)  
+    for i in range(0, lst):  
+          
+        for j in range(0, lst-i-1):  
+            if (tup[j][1] > tup[j + 1][1]):  
+                temp = tup[j]  
+                tup[j]= tup[j + 1]  
+                tup[j + 1]= temp  
+    return tup  
+
+# Write a python program to print all pair combinations of 2 tuples.
+
+test_tuple1 = (4, 5) 
+test_tuple2 = (7, 8) 
+  
+res =  [(a, b) for a in test_tuple1 for b in test_tuple2] 
+res = res +  [(a, b) for a in test_tuple2 for b in test_tuple1] 
+  
+print("The filtered tuple : " + str(res))
+
+# Write a python program to print positive Tuples in List.
+  
+test_list = [(4, 5, 9), (-3, 2, 3), (-3, 5, 6), (4, 6)] 
+  
+
+print("The original list is : " + str(test_list)) 
+  
+
+res = [sub for sub in test_list if all(ele >= 0 for ele in sub)] 
+  
+
+print("Positive elements Tuples : " + str(res))
+
+# Write a python program to join Tuples from a list of tupels if they have similar initial element. Print out the output
+
+test_list = [(5, 6), (5, 7), (6, 8), (6, 10), (7, 13)] 
+print("The original list is : " + str(test_list)) 
+  
+res = [] 
+for sub in test_list:                                            
+    if res and res[-1][0] == sub[0]:               
+        res[-1].extend(sub[1:])                         
+    else: 
+        res.append([ele for ele in sub])      
+res = list(map(tuple, res)) 
+  
+print("The extracted elements : " + str(res))
+
+
+# Write a python program to print the uncommon elements in List 
+
+  
+test_list1 = [ [1, 2], [3, 4], [5, 6] ] 
+test_list2 = [ [3, 4], [5, 7], [1, 2] ] 
+  
+res_list = [] 
+for i in test_list1: 
+    if i not in test_list2: 
+        res_list.append(i) 
+for i in test_list2: 
+    if i not in test_list1: 
+        res_list.append(i) 
+          
+print ("The uncommon of two lists is : " + str(res_list))
+
+# write a Function to convert the time from 12 hour format to 24 hour format 
+def convert24(str1): 
+      
+    if str1[-2:] == "AM" and str1[:2] == "12": 
+        return "00" + str1[2:-2] 
+          
+    elif str1[-2:] == "AM": 
+        return str1[:-2] 
+      
+    elif str1[-2:] == "PM" and str1[:2] == "12": 
+        return str1[:-2] 
+          
+    else: 
+
+        return str(int(str1[:2]) + 12) + str1[2:8]
+
+
+
+
+
+
+
+

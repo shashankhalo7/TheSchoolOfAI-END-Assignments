@@ -14,14 +14,15 @@
 
 ## Notebooks
 ### Question-and-answer dataset
-Question and Answer dataset from CMU corpus. Tab delimied data files from 2008, 2009 and 2010 are combined into one single file merged_qa.csv and manually uploaded to colab
+Question and Answer dataset from CMU corpus. Tab delimied data files from 2008, 2009 and 2010 are combined into one single file merged_qa.csv and used Question and Answers as the Source and terget respectively.
 1. Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation [Notebook](https://github.com/shashankhalo7/TheSchoolOfAI-END-Assignments/blob/main/Assignment9/QA_CMU_Dataset_using_RNN_Encoder_Decoder.ipynb)
 2. Neural Machine Translation by Jointly Learning to Align and Translate [Notebook](https://github.com/shashankhalo7/TheSchoolOfAI-END-Assignments/blob/main/Assignment9/QA_CMU_Dataset_using_Neural_Machine_Translation.ipynb)
 ### Quora question pair
-Quora Questions pair [dataset](https://data.quora.com/First-Quora-Dataset-Release-Question-Pairs) . Tab delimied data file 'quora_duplicate_questions.csv' and manually uploaded to colab. We use only questions pair that are semantically equivalent ones for this exercise to train a question paraphrasing model.
+Quora Questions pair [dataset](https://data.quora.com/First-Quora-Dataset-Release-Question-Pairs) . Tab delimied data file 'quora_duplicate_questions.csv' and manually uploaded to colab. We use only questions pair that are semantically equivalent as Source and target for this exercise to train a question paraphrasing model.
 1. Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation [Notebook](https://github.com/shashankhalo7/TheSchoolOfAI-END-Assignments/blob/main/Assignment9/QA_Quora_Dataset_using_RNN_Encoder_Decoder.ipynb)
 2. Neural Machine Translation by Jointly Learning to Align and Translate [Notebook](https://github.com/shashankhalo7/TheSchoolOfAI-END-Assignments/blob/main/Assignment9/QA_Quora_Dataset_using_Neural_Machine_Translation.ipynb)
 ### Customer Support on Twitter
+Customer Support on Twitter dataset is a large, modern corpus of tweets and replies to aid innovation in natural language understanding and conversational models, and for study of modern customer support practices and impact. We used the csv to extract tweets and their corresponding replies by aligning the tweet with the reply_tweet_id amnd mapping it back to the query tweet. We used these as source and target for the Seq2Seq model
 1. Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation [Notebook](https://github.com/shashankhalo7/TheSchoolOfAI-END-Assignments/blob/main/Assignment9/Twitter_CustomerSupport_Dataset_using_RNN_Encoder_Decoder.ipynb)
 2. Neural Machine Translation by Jointly Learning to Align and Translate [Notebook](https://github.com/shashankhalo7/TheSchoolOfAI-END-Assignments/blob/main/Assignment9/Twitter_CustomerSupport_Dataset_using_Neural_Machine_Translation.ipynb)
 ### Cornell Movie-Dialogs Corpus
